@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="Conheça as tecnologias da NVIDIA: placas de vídeo, inteligência artificial, data centers, carros e ciência.">
+  <title>NVIDIA — Computação acelerada e inteligência artificial</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <header class="site-header" id="topo">
+    <div class="header-inner container">
+      <a class="brand" href="#topo" aria-label="NVIDIA — início">
+        <span class="brand-nvidia">
+          <img class="logo-light" src="images/logoNvidiaPreto.png" alt="NVIDIA">
+          <img class="logo-dark" src="images/logoNvidiaBranco.png" alt="NVIDIA">
+        </span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-techcamps"><img src="images/LogoTechCamps.png" alt="Tech CAMPS"></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">Visão geral</a>
+        <a href="#historia">História</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#impactos">Impactos</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" title="Ativar modo escuro">
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.3A8.6 8.6 0 0 1 8.7 3.6 8.8 8.8 0 1 0 20.4 15.3Z"/></svg>
+          <span id="theme-label">Modo escuro</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> COMPUTAÇÃO ACELERADA <span class="eyebrow-line"></span></p>
+          <h1 id="hero-title">NVIDIA:<br><span>da GPU à IA.</span></h1>
+          <p class="hero-lead">Tecnologias que fazem os gráficos, a inteligência artificial e novas formas de computação funcionarem.</p>
+          <div class="hero-actions">
+            <a class="button button-green" href="#sobre">Conheça a NVIDIA</a>
+            <a class="button button-outline" href="#produtos">Ver produtos</a>
+          </div>
+          <div class="hero-note"><span class="status-dot"></span> GRÁFICOS · IA · COMPUTAÇÃO DE ALTO DESEMPENHO</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-facts" aria-label="Datas importantes da NVIDIA">
+      <div class="container facts-inner">
+        <div class="fact"><span class="fact-value">1993</span><span class="fact-label">Fundação</span></div>
+        <div class="fact"><span class="fact-value">1999</span><span class="fact-label">GeForce 256</span></div>
+        <div class="fact"><span class="fact-value">2006</span><span class="fact-label">CUDA</span></div>
+        <div class="fact fact-last"><span class="fact-value">GPU + IA</span><span class="fact-label">Computação acelerada</span></div>
+      </div>
+    </section>
+
+    <section class="section section-about" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="sobre-title">Mais do que placas de vídeo.</h2>
+          <p class="section-deck">A NVIDIA cria tecnologias para gráficos e inteligência artificial, usadas em jogos, computadores, data centers e carros.</p>
+        </div>
+        <div class="about-layout">
+          <div class="about-text">
+            <p class="large-copy">Tudo começou com a computação gráfica. Com o tempo, as GPUs passaram a ajudar em tarefas que vão muito além de desenhar imagens na tela.</p>
+            <p>Hoje, esse conjunto de tecnologias está presente na criação de conteúdo, na pesquisa científica, nos automóveis, na robótica e na inteligência artificial.</p>
+            <p>Hardware e software trabalham juntos: a GPU faz o processamento, e as plataformas e ferramentas ajudam os programas a usar essa força.</p>
+          </div>
+          <aside class="definition-box">
+            <span class="definition-label">CONCEITO-CHAVE</span>
+            <h3>GPU não é a mesma coisa que placa de vídeo.</h3>
+            <p>A GPU é o processador gráfico. A placa de vídeo é a peça completa, que tem a GPU, a memória e outros componentes.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-history" id="historia" aria-labelledby="historia-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="historia-title">Uma história em seis períodos.</h2>
+          <p class="section-deck">Dos primeiros aceleradores gráficos até as tecnologias que hoje sustentam a inteligência artificial.</p>
+        </div>
+        <div class="timeline" aria-label="Linha do tempo de 1993 a 2020">
+          <article class="timeline-period"><div class="timeline-year">1993–1995</div><span class="timeline-dot"></span><div class="timeline-entry"><h3>Os primeiros gráficos 3D</h3><p>A NVIDIA foi fundada em 1993 por Jensen Huang, Chris Malachowsky e Curtis Priem. Em 1994, fez uma parceria com a SGS-Thomson. Em 1995, lançou o NV1, vendido como Diamond Edge 3D.</p><span class="timeline-highlight">NV1 · Diamond Edge 3D</span></div></article>
+          <article class="timeline-period"><div class="timeline-year">1996–2000</div><span class="timeline-dot"></span><div class="timeline-entry"><h3>Crescimento no mercado de gráficos</h3><p>A empresa ampliou a família RIVA e, em 1999, apresentou a GeForce 256, considerada a primeira GPU. Também lançou a linha Quadro e forneceu os chips gráficos do primeiro Xbox.</p><span class="timeline-highlight">RIVA · GeForce 256 · Quadro</span></div></article>
+          <article class="timeline-period"><div class="timeline-year">2001–2005</div><span class="timeline-dot"></span><div class="timeline-entry"><h3>Novas plataformas</h3><p>Chegaram a plataforma nForce, a GeForce3 programável e a tecnologia SLI. A computação gráfica ajudou a NASA a recriar o terreno de Marte, e a NVIDIA anunciou o chip gráfico do PlayStation 3.</p><span class="timeline-highlight">GeForce3 · SLI · PlayStation 3</span></div></article>
+          <article class="timeline-period"><div class="timeline-year">2006–2010</div><span class="timeline-dot"></span><div class="timeline-entry"><h3>Usos além dos gráficos</h3><p>Em 2006, a NVIDIA apresentou o CUDA, que permite usar a GPU em outros tipos de cálculo. A família Tesla levou esse poder a pesquisadores e supercomputadores. Nessa época também surgiram o Tegra, o Fermi e a primeira GTC.</p><span class="timeline-highlight">CUDA · Tesla · Tegra</span></div></article>
+          <article class="timeline-period"><div class="timeline-year">2011–2015</div><span class="timeline-dot"></span><div class="timeline-entry"><h3>Mobilidade e nuvem</h3><p>Vieram as arquiteturas Kepler e Maxwell, a GPU virtual GRID, a linha SHIELD e avanços em deep learning. Em 2015, chegaram o NVIDIA DRIVE e o Jetson TX1.</p><span class="timeline-highlight">GRID · SHIELD · DRIVE · Jetson</span></div></article>
+          <article class="timeline-period"><div class="timeline-year">2016–2020</div><span class="timeline-dot"></span><div class="timeline-entry"><h3>A inteligência artificial ganha força</h3><p>A NVIDIA lançou o DGX-1, Pascal, Volta, Turing e Ampere, além do Jetson AGX Xavier, Isaac, Clara, RAPIDS, NVIDIA Studio, DRIVE AGX Orin e EGX. Em 2020, terminou a compra da Mellanox.</p><span class="timeline-highlight">DGX · Isaac · Clara · Ampere</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tech" id="tecnologias" aria-labelledby="tecnologias-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="tecnologias-title">Ideias que movem tudo isso.</h2>
+          <p class="section-deck">Hardware, software e plataformas trabalham juntos para deixar diferentes tipos de processamento mais rápidos.</p>
+        </div>
+        <div class="technology-list">
+          <article class="technology-row"><h3>GeForce</h3><p>Linha de placas de vídeo usada principalmente em jogos, edição de vídeo e criação de imagens 3D, com foco em desempenho e qualidade visual.</p><span class="tech-type">GRÁFICOS</span></article>
+          <article class="technology-row"><h3>CUDA</h3><p>Plataforma que permite usar a GPU em cálculos que não são só gráficos. É usada em inteligência artificial, ciência e análise de dados.</p><span class="tech-type">COMPUTAÇÃO</span></article>
+          <article class="technology-row"><h3>DLSS e Ray Tracing</h3><p>Recursos para jogos. O ray tracing simula como a luz se comporta, e o DLSS usa IA para melhorar a imagem e o desempenho.</p><span class="tech-type">GAMES</span></article>
+          <article class="technology-row"><h3>Data Centers, DGX e Blackwell</h3><p>GPUs, arquiteturas e sistemas completos que processam grandes quantidades de informação e aceleram trabalhos de inteligência artificial.</p><span class="tech-type">INFRAESTRUTURA</span></article>
+          <article class="technology-row"><h3>NVIDIA Broadcast e ChatRTX</h3><p>O Broadcast melhora o áudio e o vídeo nas chamadas. O ChatRTX é um assistente de IA que pode analisar arquivos do seu próprio computador, se ele for compatível.</p><span class="tech-type">PRODUTIVIDADE</span></article>
+          <article class="technology-row"><h3>NVIDIA DRIVE e Jetson</h3><p>O DRIVE é usado em sistemas de ajuda ao motorista e direção automática. O Jetson é um computador pequeno para robôs e aplicações de IA.</p><span class="tech-type">MOBILIDADE</span></article>
+          <article class="technology-row"><h3>Omniverse e Isaac</h3><p>O Omniverse ajuda em trabalhos com 3D e simulações. O Isaac reúne ferramentas para criar e testar robôs.</p><span class="tech-type">SIMULAÇÃO</span></article>
+          <article class="technology-row"><h3>NVIDIA Clara</h3><p>Tecnologias para saúde e ciência, como o trabalho com imagens médicas e pesquisas feitas no computador.</p><span class="tech-type">SAÚDE · CIÊNCIA</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-products" id="produtos" aria-labelledby="produtos-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="produtos-title">Produtos e soluções.</h2>
+          <p class="section-deck">Veja algumas linhas de hardware, plataformas e programas da NVIDIA para diferentes necessidades.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="search-box">
+            <label class="search-label" for="product-search">Buscar produto</label>
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+              <input id="product-search" type="search" placeholder="Digite o nome ou o assunto (ex.: jogos, robô, IA)" autocomplete="off">
+              <button class="search-clear" id="search-clear" type="button" aria-label="Limpar busca" hidden>✕</button>
+            </div>
+            <div class="search-tips">
+              <span>Sugestões:</span>
+              <button class="tip-button" type="button" data-tip="jogos">jogos</button>
+              <button class="tip-button" type="button" data-tip="IA">IA</button>
+              <button class="tip-button" type="button" data-tip="robô">robô</button>
+              <button class="tip-button" type="button" data-tip="vídeo">vídeo</button>
+              <button class="tip-button" type="button" data-tip="saúde">saúde</button>
+            </div>
+          </div>
+          <div class="catalog-filters" role="group" aria-label="Filtrar produtos por categoria">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-filter="gaming" aria-pressed="false">Gaming e criação</button>
+            <button class="filter-button" type="button" data-filter="datacenter" aria-pressed="false">Data center e IA</button>
+            <button class="filter-button" type="button" data-filter="dev" aria-pressed="false">Desenvolvimento</button>
+            <button class="filter-button" type="button" data-filter="pro" aria-pressed="false">Profissional</button>
+            <button class="filter-button" type="button" data-filter="edge" aria-pressed="false">Robótica e edge</button>
+            <button class="filter-button" type="button" data-filter="mobility" aria-pressed="false">Automotivo</button>
+            <button class="filter-button" type="button" data-filter="simulation" aria-pressed="false">Simulação e saúde</button>
+          </div>
+        </div>
+
+        <div class="catalog-status" aria-live="polite">
+          <span id="product-count">19 produtos e soluções</span>
+          <button class="reset-button" id="reset-filters" type="button" hidden>Limpar busca e filtros</button>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="gaming">
+            <a class="product-image-link" href="https://www.nvidia.com/pt-br/geforce/graphics-cards/50-series/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer GeForce RTX"><img src="images/geforce-rtx.png" alt="Visual de uma GPU para jogos" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">GAMING</span><h3>GeForce RTX</h3><p>Placas de vídeo para jogos e criação, com ray tracing e recursos gráficos que usam inteligência artificial.</p><a class="product-link" href="https://www.nvidia.com/pt-br/geforce/graphics-cards/50-series/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="gaming">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/studio/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Studio"><img src="images/nvidia-studio.png" alt="Computador para criação digital" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">CRIAÇÃO</span><h3>NVIDIA Studio</h3><p>Ferramentas que ajudam na edição de vídeo, design, ilustração e renderização 3D.</p><a class="product-link" href="https://www.nvidia.com/en-us/studio/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="gaming">
+            <a class="product-image-link" href="https://www.nvidia.com/pt-br/geforce/broadcasting/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Broadcast"><img src="images/nvidia-broadcast.png" alt="Equipamentos de áudio e vídeo" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">ÁUDIO E VÍDEO</span><h3>NVIDIA Broadcast</h3><p>Recursos de IA para tirar ruídos, melhorar a imagem e deixar transmissões e chamadas melhores.</p><a class="product-link" href="https://www.nvidia.com/pt-br/geforce/broadcasting/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="gaming">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/geforce-now/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer GeForce NOW"><img src="images/geforce-now.png" alt="Tela de jogos em streaming" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">JOGOS NA NUVEM</span><h3>GeForce NOW</h3><p>Serviço que permite jogar títulos compatíveis pela internet, em vários aparelhos.</p><a class="product-link" href="https://www.nvidia.com/en-us/geforce-now/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="gaming">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/shield/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer SHIELD TV"><img src="images/shield-tv.png" alt="Aparelho de streaming para a sala" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">ENTRETENIMENTO</span><h3>SHIELD TV</h3><p>Aparelho para assistir filmes e séries em alta resolução e se divertir em casa.</p><a class="product-link" href="https://www.nvidia.com/en-us/shield/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="datacenter">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/products/workstations/dgx-spark/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer DGX Spark"><img src="images/dgx-spark.png" alt="Computador compacto para inteligência artificial" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">IA EM TAMANHO COMPACTO</span><h3>DGX Spark</h3><p>Computador de mesa feito para criar e rodar projetos de IA no próprio local.</p><a class="product-link" href="https://www.nvidia.com/en-us/products/workstations/dgx-spark/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="datacenter">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/data-center/dgx-platform/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer Plataforma DGX"><img src="images/dgx-systems.png" alt="Sistema de computação para data center" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">INFRAESTRUTURA DE IA</span><h3>Plataforma DGX</h3><p>Sistemas completos para criar, treinar e usar modelos de inteligência artificial.</p><a class="product-link" href="https://www.nvidia.com/en-us/data-center/dgx-platform/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="datacenter">
+            <a class="product-image-link" href="https://www.nvidia.com/pt-br/data-center/technologies/blackwell-architecture/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer Blackwell e HGX"><img src="images/blackwell-hgx.png" alt="Peças de uma plataforma de computação" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">COMPUTAÇÃO ACELERADA</span><h3>Blackwell e HGX</h3><p>Arquitetura e plataformas pensadas para trabalhos pesados de IA e processamento em grande escala.</p><a class="product-link" href="https://www.nvidia.com/pt-br/data-center/technologies/blackwell-architecture/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="datacenter">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/data-center/grace-cpu/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Grace"><img src="images/grace-cpu.png" alt="Processador para computadores" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">PROCESSADOR PARA DATA CENTER</span><h3>NVIDIA Grace</h3><p>Família de processadores (CPUs) feita para trabalhar junto com sistemas de computação acelerada e de IA.</p><a class="product-link" href="https://www.nvidia.com/en-us/data-center/grace-cpu/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="pro">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/design-visualization/rtx-pro-graphics/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA RTX PRO"><img src="images/rtx-pro.png" alt="Computador gráfico para trabalho profissional" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">PROFISSIONAL</span><h3>NVIDIA RTX PRO</h3><p>Plataforma gráfica para design, engenharia e outros trabalhos profissionais que pedem muito desempenho.</p><a class="product-link" href="https://www.nvidia.com/en-us/design-visualization/rtx-pro-graphics/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="dev">
+            <a class="product-image-link" href="https://developer.nvidia.com/cuda-toolkit" target="_blank" rel="noopener noreferrer" aria-label="Conhecer CUDA"><img src="images/cuda.png" alt="Imagem de computação paralela" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">DESENVOLVIMENTO</span><h3>CUDA</h3><p>Plataforma de programação que deixa usar a GPU para vários tipos de cálculo.</p><a class="product-link" href="https://developer.nvidia.com/cuda-toolkit" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="dev">
+            <a class="product-image-link" href="https://developer.nvidia.com/tensorrt" target="_blank" rel="noopener noreferrer" aria-label="Conhecer TensorRT e AI Enterprise"><img src="images/tensorrt-enterprise.png" alt="Ferramentas para colocar IA em uso" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">SOFTWARE DE IA</span><h3>TensorRT e AI Enterprise</h3><p>Ferramentas para deixar a IA mais rápida e colocá-la para funcionar em diferentes ambientes.</p><a class="product-link" href="https://developer.nvidia.com/tensorrt" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="dev">
+            <a class="product-image-link" href="https://catalog.ngc.nvidia.com/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NGC e NeMo"><img src="images/ngc-nemo.png" alt="Modelos e ferramentas de inteligência artificial" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">MODELOS E FERRAMENTAS</span><h3>NGC e NeMo</h3><p>Recursos para trabalhar com modelos, contêineres, bibliotecas e aplicações de IA generativa.</p><a class="product-link" href="https://catalog.ngc.nvidia.com/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="dev">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/ai-on-rtx/chatrtx/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer ChatRTX"><img src="images/chatrtx.png" alt="Tela de um assistente de IA" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">IA NO PC</span><h3>ChatRTX</h3><p>Aplicativo que usa modelos de IA no seu computador para pesquisar nos seus próprios arquivos.</p><a class="product-link" href="https://www.nvidia.com/en-us/ai-on-rtx/chatrtx/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="edge">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Jetson"><img src="images/jetson.png" alt="Computador pequeno para robótica e IA" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">ROBÓTICA E EDGE AI</span><h3>NVIDIA Jetson</h3><p>Computador pequeno para criar aplicações embarcadas, visão computacional e robôs.</p><a class="product-link" href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="edge">
+            <a class="product-image-link" href="https://developer.nvidia.com/isaac" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Isaac"><img src="images/isaac-robotics.png" alt="Robô em teste de simulação" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">ROBÓTICA</span><h3>NVIDIA Isaac</h3><p>Plataforma e ferramentas para criar, simular e colocar robôs para funcionar.</p><a class="product-link" href="https://developer.nvidia.com/isaac" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="mobility">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/self-driving-cars/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA DRIVE"><img src="images/drive-agx.png" alt="Carro com sensores e computação inteligente" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">AUTOMOTIVO</span><h3>NVIDIA DRIVE</h3><p>Plataforma para carros, com sistemas inteligentes de bordo e ajuda ao motorista.</p><a class="product-link" href="https://www.nvidia.com/en-us/self-driving-cars/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="simulation">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/omniverse/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Omniverse"><img src="images/omniverse.png" alt="Simulação 3D de uma fábrica" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">SIMULAÇÃO 3D</span><h3>NVIDIA Omniverse</h3><p>Plataforma para trabalhos em 3D e simulações, incluindo a criação de gêmeos digitais.</p><a class="product-link" href="https://www.nvidia.com/en-us/omniverse/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+          <article class="product-card" data-category="simulation">
+            <a class="product-image-link" href="https://www.nvidia.com/en-us/clara/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer NVIDIA Clara"><img src="images/clara-health.png" alt="Imagens médicas e dados de saúde" loading="lazy" width="720" height="450"></a>
+            <div class="product-card-copy"><span class="product-category">SAÚDE E CIÊNCIA</span><h3>NVIDIA Clara</h3><p>Tecnologias para saúde e ciência, incluindo o trabalho com imagens médicas.</p><a class="product-link" href="https://www.nvidia.com/en-us/clara/" target="_blank" rel="noopener noreferrer">Conhecer solução ↗</a></div>
+          </article>
+        </div>
+        <p class="catalog-empty" id="catalog-empty" hidden>Nenhum produto encontrado. Tente outra palavra ou escolha outra categoria.</p>
+      </div>
+    </section>
+
+    <section class="section section-applications" id="aplicacoes" aria-labelledby="aplicacoes-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="aplicacoes-title">A tecnologia em diferentes áreas.</h2>
+          <p class="section-deck">A computação acelerada muda de forma conforme o problema, o lugar onde é usada e o tipo de dado.</p>
+        </div>
+        <div class="applications-grid">
+          <article class="application-card"><span class="application-tag">ENTRETENIMENTO</span><h3>Games e gráficos</h3><p>Imagens em tempo real, ray tracing e recursos de IA deixam os jogos mais detalhados.</p></article>
+          <article class="application-card"><span class="application-tag">CRIAÇÃO</span><h3>Conteúdo e produtividade</h3><p>Vídeo, design, renderização e chamadas usam recursos gráficos e ferramentas aceleradas.</p></article>
+          <article class="application-card"><span class="application-tag">INTELIGÊNCIA ARTIFICIAL</span><h3>Data centers e IA</h3><p>GPUs e sistemas completos processam muitos dados e ajudam a treinar e usar modelos de IA.</p></article>
+          <article class="application-card"><span class="application-tag">MOBILIDADE</span><h3>Automóveis</h3><p>Computadores podem ler sensores e ajudar em recursos de assistência ao motorista e direção automática.</p></article>
+          <article class="application-card"><span class="application-tag">AUTOMAÇÃO</span><h3>Robótica</h3><p>Simulação e computadores pequenos ajudam a criar, testar e controlar máquinas autônomas.</p></article>
+          <article class="application-card"><span class="application-tag">PESQUISA</span><h3>Saúde e ciência</h3><p>O processamento acelerado pode ajudar na análise de imagens médicas, em pesquisas e em simulações.</p></article>
+          <article class="application-card application-wide"><span class="application-tag">VISUALIZAÇÃO AVANÇADA</span><h3>Gêmeos digitais</h3><p>Ambientes virtuais e simulações permitem estudar fábricas, robôs e construções antes de mudar qualquer coisa no mundo real.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-impact" id="impactos" aria-labelledby="impactos-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="impactos-title">Possibilidades e limites.</h2>
+          <p class="section-deck">A computação acelerada permite calcular e simular mais coisas, mas traz questões de custo, energia e produção.</p>
+        </div>
+        <div class="impact-challenge-grid">
+          <article class="impact-panel">
+            <span class="panel-kicker">CONTRIBUIÇÕES</span>
+            <h3>O que essas tecnologias podem fazer?</h3>
+            <ul>
+              <li><strong>Inteligência artificial</strong><p>Mais força para treinar e usar modelos de computador.</p></li>
+              <li><strong>Gráficos e simulação</strong><p>Imagens em 3D, mundos virtuais e simulações digitais.</p></li>
+              <li><strong>Ciência e clima</strong><p>A computação acelerada pode ajudar a estudar e prever o clima.</p></li>
+              <li><strong>Saúde, robótica e mobilidade</strong><p>Pesquisas com imagens médicas, robôs e sistemas de ajuda ao motorista.</p></li>
+            </ul>
+          </article>
+          <article class="challenge-panel">
+            <span class="panel-kicker">DESAFIOS</span>
+            <h3>O que precisa ser pensado?</h3>
+            <ul>
+              <li><strong>Gasto de energia</strong><p>Rodar modelos de IA exige muita eletricidade e uma boa estrutura de computadores.</p></li>
+              <li><strong>Produção concentrada</strong><p>Fazer chips depende de uma cadeia global complicada e de poucas fábricas avançadas.</p></li>
+              <li><strong>Preço alto</strong><p>Equipamentos de ponta podem ser caros demais para pequenas empresas e escolas.</p></li>
+              <li><strong>Acesso e preparo</strong><p>Usar sistemas avançados também pede conhecimento, suporte e estrutura adequada.</p></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-conclusion" id="conclusao" aria-labelledby="conclusao-title">
+      <div class="container conclusion-layout">
+        <h2 id="conclusao-title">Da computação gráfica à computação acelerada.</h2>
+        <p>A evolução das GPUs ampliou o papel do processamento paralelo. Além de gerar gráficos, ele passou a ajudar na inteligência artificial, na pesquisa científica, nas simulações, na automação e nos veículos.</p>
+        <p>Esse avanço abre novas possibilidades, mas também é preciso pensar no gasto de energia, nos custos e no acesso à estrutura necessária. Entender isso ajuda a enxergar a tecnologia de forma mais completa.</p>
+        <a class="text-arrow" href="#topo">Voltar ao início ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-logos">
+        <span class="footer-nvidia"><img class="logo-light" src="images/logoNvidiaPreto.png" alt="NVIDIA"><img class="logo-dark" src="images/logoNvidiaBranco.png" alt="NVIDIA"></span>
+        <span class="footer-x" aria-hidden="true">×</span>
+        <span class="footer-techcamps"><img src="images/LogoTechCamps.png" alt="Tech CAMPS"></span>
+      </div>
+      <p class="footer-slogan">Este site é um trabalho escolar, desenvolvido apenas para fins estudantis e sem fins comerciais.</p>
+
+      <div class="footer-nav">
+        <a href="#sobre">Visão geral</a><a href="#historia">História</a><a href="#tecnologias">Tecnologias</a><a href="#produtos">Produtos</a><a href="#aplicacoes">Aplicações</a><a href="#impactos">Impactos</a>
+      </div>
+
+      <div class="footer-team">
+        <h3>Integrantes do grupo</h3>
+        <ul>
+          <li>Amanda Wrobleswski</li>
+          <li>Byatriz Honorato</li>
+          <li>Gustavo Nascimento</li>
+          <li>Leticia Santos</li>
+          <li>Murilo César</li>
+          <li>Natasha Karbstein</li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 NVIDIA</span>
+        <a href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
